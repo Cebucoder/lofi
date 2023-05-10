@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif !important;
+}
+
+.main-cont{
+    width: 100%;
+    height: 100vh;
+    background: url("/images/logback.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.2s;
+    /* z-index: -1; */
+}
+.overlay:hover{
+    background: none;
+    box-shadow: none;
+    backdrop-filter: inherit;
+    -webkit-backdrop-filter: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* transition: 0.2s; */
+}
+
+form{
+    /* width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    z-index: 1; */
+}
+
+.login-form{
+    min-width: 370px;
+    max-width: 100%;
+    /* width: 500px;/ */
+    min-height: 540px;
+    max-height: 100%;
+    /* height: 700px; */
+    background: #9152f8;
+    background: -webkit-linear-gradient(top,#7579ff,#b224ef);
+    background: -o-linear-gradient(top,#7579ff,#b224ef);
+    background: -moz-linear-gradient(top,#7579ff,#b224ef);
+    background: linear-gradient(top,#7579ff,#b224ef);
+    border-radius: 10px;
+    position: relative;
+    right: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px 40px;
+
+}
+.logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    margin: auto;
+}
+.logoname{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: #fff;
+}
+.logoname h1{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.input-form{
+    width: 100%;
+    height: auto;
+    /* padding: 10px 0; */
+    /* background: pink; */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* input-box */
+.input-box{
+    width: 100%;
+    height: 50px;
+    /* background: pink; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    margin: 13px 0;
+}
+
+/* change border color to danger */
+
+.err-input{
+    border: 1.5px solid darkred;
+    animation: shake 0.5s;
+
+}
+
+/* adding shake effect */
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+
+.input-box span{
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    width: auto;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9152f8;
+    color: #fff;
+    font-size: 13px;
+}
+.input-box .span1{
+    background: #9350fff4;
+}
+
+.input-wth-icon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.input-wth-icon input{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    outline-color: none;
+    color: #fff;
+    padding-left: 10px;
+}
+.input-wth-icon ion-icon{
+    color: #fff;
+}
+
+
+
+
+.rem{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    /* margin-top: 15px; */
+    margin-bottom: 25px;
+}
+.rem small{
+    padding-left: 30px;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* ============================== */
+/* Hide the browser's default checkbox */
+.check-cont{
+
+}
+
+.check-cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    border: 1px solid #003041;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border:1px solid #b224ef;
+    border-radius:2px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check-cont:hover input ~ .checkmark {
+    cursor: pointer;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .check-cont input:checked ~ .checkmark {
+    background-color: #fff;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+  }
+  
+  /* Show the checkmark when checked */
+  .check-cont input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .checkbox{
+    border: 1px solid #003041;
+  }
+  
+  /* Style the checkmark/indicator */
+  .check-cont .checkmark:after {
+    left: 6px;
+    top: 3.5px;
+    width: 3px;
+    height: 8px;
+    border: solid #b224ef;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* log-btn */
+.log-btn{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.log-btn button{
+    margin: auto;
+    background: none;
+    border: none;
+}
+.btn-preorder {
+    align-items: center;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    display: flex;
+    font-family: BlenderProBold,sans-serif;
+    font-size: 13px;
+    /* font-weight: 700; */
+    height: 40px;
+    justify-content: center;
+    letter-spacing: 2px;
+    line-height: 1;
+    position: relative;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    width: 110px;
+    border-radius: 50px;
+    background: #9152f8;
+    background: -webkit-linear-gradient(bottom,#7579ff,#b224ef);
+    background: -o-linear-gradient(bottom,#7579ff,#b224ef);
+    background: -moz-linear-gradient(bottom,#7579ff,#b224ef);
+    background: linear-gradient(bottom,#7579ff,#b224ef);
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    box-shadow: 0 0 10px -3px #fff;
+    margin: auto;
+}
+
+.btn-preorder--glitch {
+    background: #9152f8;
+    background: -webkit-linear-gradient(bottom,#7579ff,#b224ef);
+    background: -o-linear-gradient(bottom,#7579ff,#b224ef);
+    background: -moz-linear-gradient(bottom,#7579ff,#b224ef);
+    background: linear-gradient(bottom,#7579ff,#b224ef);
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    box-shadow: 0 0 10px -3px #fff;
+    background-repeat: no-repeat;
+    display: none;
+    filter: drop-shadow(-2px 3px #67e3f3) drop-shadow(-1px -3px #00F0FF) drop-shadow(2px 1px #00F0FF);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+@supports (clip-path: polygon(0 2%,100% 2%,100% 5%,0 5%)) {
+    .btn-preorder:hover .btn-preorder--glitch,.btn-preorder:hover .btn-preorder__text:after {
+        animation-direction:alternate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: glitch-anim-1;
+        animation-timing-function: linear;
+        display: block
+    }
+}
+
+.btn-preorder__text {
+    position: relative;
+    z-index: 2
+}
+
+.btn-preorder__text:after {
+    content: attr(data-text);
+    display: none;
+    left: 0;
+    position: absolute;
+    text-shadow: 2px 1px #67e3f3,-2px -2px #f8ef02;
+    top: 0;
+    width: 100%;
+    z-index: 2
+}
+
+@keyframes glitch-anim-1 {
+    0% {
+        -webkit-clip-path: polygon(0 2%,100% 2%,100% 5%,0 5%);
+        clip-path: polygon(0 2%,100% 2%,100% 5%,0 5%);
+        opacity: 1;
+        transform: translateZ(0)
+    }
+
+    2% {
+        -webkit-clip-path: polygon(0 78%,100% 78%,100% 100%,0 100%);
+        clip-path: polygon(0 78%,100% 78%,100% 100%,0 100%);
+        transform: translate(-5px)
+    }
+
+    6% {
+        -webkit-clip-path: polygon(0 78%,100% 78%,100% 100%,0 100%);
+        clip-path: polygon(0 78%,100% 78%,100% 100%,0 100%);
+        transform: translate(5px)
+    }
+
+    8% {
+        -webkit-clip-path: polygon(0 78%,100% 78%,100% 100%,0 100%);
+        clip-path: polygon(0 78%,100% 78%,100% 100%,0 100%);
+        transform: translate(-5px)
+    }
+
+    9% {
+        -webkit-clip-path: polygon(0 78%,100% 78%,100% 100%,0 100%);
+        clip-path: polygon(0 78%,100% 78%,100% 100%,0 100%);
+        transform: translate(0)
+    }
+
+    10% {
+        -webkit-clip-path: polygon(0 54%,100% 54%,100% 44%,0 44%);
+        clip-path: polygon(0 54%,100% 54%,100% 44%,0 44%);
+        transform: translate3d(5px,0,0)
+    }
+
+    13% {
+        -webkit-clip-path: polygon(0 54%,100% 54%,100% 44%,0 44%);
+        clip-path: polygon(0 54%,100% 54%,100% 44%,0 44%);
+        transform: translateZ(0)
+    }
+
+    13.1% {
+        -webkit-clip-path: polygon(0 0,0 0,0 0,0 0);
+        clip-path: polygon(0 0,0 0,0 0,0 0);
+        transform: translate3d(5px,0,0)
+    }
+
+    15% {
+        -webkit-clip-path: polygon(0 60%,100% 60%,100% 40%,0 40%);
+        clip-path: polygon(0 60%,100% 60%,100% 40%,0 40%);
+        transform: translate3d(5px,0,0)
+    }
+
+    20% {
+        -webkit-clip-path: polygon(0 60%,100% 60%,100% 40%,0 40%);
+        clip-path: polygon(0 60%,100% 60%,100% 40%,0 40%);
+        transform: translate3d(-5px,0,0)
+    }
+
+    20.1% {
+        -webkit-clip-path: polygon(0 0,0 0,0 0,0 0);
+        clip-path: polygon(0 0,0 0,0 0,0 0);
+        transform: translate3d(5px,0,0)
+    }
+
+    25% {
+        -webkit-clip-path: polygon(0 85%,100% 85%,100% 40%,0 40%);
+        clip-path: polygon(0 85%,100% 85%,100% 40%,0 40%);
+        transform: translate3d(5px,0,0)
+    }
+
+    30% {
+        -webkit-clip-path: polygon(0 85%,100% 85%,100% 40%,0 40%);
+        clip-path: polygon(0 85%,100% 85%,100% 40%,0 40%);
+        transform: translate3d(-5px,0,0)
+    }
+
+    30.1% {
+        -webkit-clip-path: polygon(0 0,0 0,0 0,0 0);
+        clip-path: polygon(0 0,0 0,0 0,0 0)
+    }
+
+    35% {
+        -webkit-clip-path: polygon(0 63%,100% 63%,100% 80%,0 80%);
+        clip-path: polygon(0 63%,100% 63%,100% 80%,0 80%);
+        transform: translate(-5px)
+    }
+
+    40% {
+        -webkit-clip-path: polygon(0 63%,100% 63%,100% 80%,0 80%);
+        clip-path: polygon(0 63%,100% 63%,100% 80%,0 80%);
+        transform: translate(5px)
+    }
+
+    45% {
+        -webkit-clip-path: polygon(0 63%,100% 63%,100% 80%,0 80%);
+        clip-path: polygon(0 63%,100% 63%,100% 80%,0 80%);
+        transform: translate(-5px)
+    }
+
+    50% {
+        -webkit-clip-path: polygon(0 63%,100% 63%,100% 80%,0 80%);
+        clip-path: polygon(0 63%,100% 63%,100% 80%,0 80%);
+        transform: translate(0)
+    }
+
+    55% {
+        -webkit-clip-path: polygon(0 10%,100% 10%,100% 0,0 0);
+        clip-path: polygon(0 10%,100% 10%,100% 0,0 0);
+        transform: translate3d(5px,0,0)
+    }
+
+    60% {
+        -webkit-clip-path: polygon(0 10%,100% 10%,100% 0,0 0);
+        clip-path: polygon(0 10%,100% 10%,100% 0,0 0);
+        opacity: 1;
+        transform: translateZ(0)
+    }
+
+    60.1% {
+        -webkit-clip-path: polygon(0 0,0 0,0 0,0 0);
+        clip-path: polygon(0 0,0 0,0 0,0 0);
+        opacity: 1
+    }
+
+    to {
+        -webkit-clip-path: polygon(0 0,0 0,0 0,0 0);
+        clip-path: polygon(0 0,0 0,0 0,0 0);
+        opacity: 1
+    }
+}
+
+
+
+
+ /* btm-cont */
+ .btm-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: pink; */
+    margin-top: 20px;
+ }
+ .btm-cont small{
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #fff;
+ }
+ .socials{
+    width: 100%;
+    height: auto;
+    /* background: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+ }
+ .socials span{
+    margin: 2px 9px;
+    /* background: pink; */
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: #fff;
+ }

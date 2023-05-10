@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="min-style.css">
+    <title>Uxie | Blog</title>
+</head>
+<body>
+
+    <div class="main-container" >
+        <div class="banner">
+            <div class="header">
+                <!-- left header -->
+                <div class="left-header">
+                    <!-- logo -->
+                    <div class="logo">
+                        <img src="" alt="">
+                    </div>
+                    <!-- sitename -->
+                    <span>
+                        <h1>Uxie</h1>
+                    </span>
+                </div>
+                <!-- searchbar -->
+                <div class="searchbar">
+                    <input type="text">
+                    <span>
+                        <ion-icon name="search"></ion-icon>
+                    </span>
+                </div>
+                <!-- menu bar -->
+                <div class="menubar" onclick="showMothCont()">
+                   <div class="line hover"></div>
+                   <div class="line"></div>
+                   <div class="line hover"></div>
+                </div>
+            </div>
+            <!-- navigation-social -->
+            <div class="navigation-social" id="navigation">
+
+                <!-- logo -->
+                <div class="logo hide-logo" id="show-logo">
+                    <img src="" alt="">
+                </div>
+
+                <!-- navlinks -->
+                <div class="navlinks">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="#"><li>Blog</li></a>
+                    <a href="Feature.html"><li>Feature</li></a>
+                </div>
+                <!-- social Icons -->
+                <div class="social-icon">
+                    <span><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span><ion-icon name="logo-google"></ion-icon></span>
+                    <span><ion-icon name="logo-discord"></ion-icon></span>
+                </div>
+            </div>
+
+            <div class="about-icon">
+                <div class="team-icon">
+                    <div class="small-logo" id="main-logo" onclick="showAbout()">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="small-logo mt" onclick="showAbout()">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="small-logo mt" onclick="showAbout()">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="small-logo mt" onclick="showAbout()">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="small-logo mt" onclick="showAbout()">
+                        <img src="./images/logo.png" alt="">
+                </div>
+                </div>
+            </div>
+
+
+            <!-- side navigtion for menu bar -->
+            <div class="menu-cotainer" id="menu-cotainer">
+                <div class="menu-cont" id="menu-cont">
+                    <div class="menu-cont-header" onclick="CloseMenuCont()">
+                        <ion-icon name="close"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- about us -->
+            <div class="about-cont" id="Show-About">
+                <div class="about-content">
+                    <div class="about-header">
+                        <h1>Team</h1>
+                        <span class="close-about" onclick="closeAbout()">
+                            <ion-icon name="close"></ion-icon>
+                        </span>
+                    </div>
+                    <div class="team">
+
+                        <!-- lyndon -->
+                       <div class="team-cont">
+                            <div class="team-pic">
+                                <img src="./images/lyndon.png" alt="">
+                            </div>
+                            <span class="team-details">
+                                <small>Developer/Leader</small>
+                                <button>Lyndon Erl Ramirez</button>
+                            </span>
+                       </div>
+
+                       <!-- Regine -->
+                       <div class="team-cont">
+                        <div class="team-pic">
+                            <img src="./images/lyndon.png" alt="">
+                        </div>
+                        <span class="team-details">
+                            <small>Developer/Leader</small>
+                            <button>Lyndon Erl Ramirez</button>
+                        </span>
+                        </div>
+
+                        <!-- Regine -->
+                       <div class="team-cont">
+                        <div class="team-pic">
+                            <img src="./images/lyndon.png" alt="">
+                        </div>
+                        <span class="team-details">
+                            <small>Developer/Leader</small>
+                            <button>Lyndon Erl Ramirez</button>
+                        </span>
+                        </div>
+                        <!-- lyndon -->
+                       <div class="team-cont">
+                        <div class="team-pic">
+                            <img src="./images/lyndon.png" alt="">
+                        </div>
+                        <span class="team-details">
+                            <small>Developer/Leader</small>
+                            <button>Lyndon Erl Ramirez</button>
+                        </span>
+                   </div>
+
+                   <!-- Regine -->
+                   <div class="team-cont">
+                    <div class="team-pic">
+                        <img src="./images/lyndon.png" alt="">
+                    </div>
+                    <span class="team-details">
+                        <small>Developer/Leader</small>
+                        <button>Lyndon Erl Ramirez</button>
+                    </span>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    
+</body>
+
+<!-- icon cdn -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="./js/header.js"></script>
+<script src="./js/aboutus.js"></script>
+
+</html>

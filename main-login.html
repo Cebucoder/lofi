@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main-login.css">
+    <link rel="stylesheet" type="text/css" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main-cont">
+        <div class="overlay"></div>
+
+        <form action="">
+            <div class="login-form">
+                <div class="logo">
+                    <img src="" alt="">
+                </div>
+                <span class="logoname">
+                    <h1>Uxie</h1>
+                </span>
+
+                <div class="input-form">
+                    <div class="input-box" id="input-box">
+                        <span class="span1"><small>Username</small></span>
+                        <div class="input-wth-icon">
+                            <ion-icon name="person"></ion-icon>
+                            <input id="username" type="text" required>
+                        </div>
+                    </div>
+                    <div class="input-box" id="input-box1">
+                        <span><small>Password</small></span>
+                        <div class="input-wth-icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                            <input id="password" type="password" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rem">
+                    <label class="check-cont">
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <small>Remember me</small>
+                </div>
+
+                <div class="log-btn" >
+                    <button type="button" onclick="signIn()"><a class="btn-preorder btn-preorder--buy"><span class="btn-preorder__text" data-text="Login">Login</span><span class="btn-preorder--glitch"></span></a></button>
+                </div>
+
+                <div class="btm-cont">
+                        <small>Forgot password</small>
+                        <div class="socials">
+                            <span>
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </span>
+                            <span>
+                                <ion-icon name="logo-google"></ion-icon>
+                            </span>
+                            <span>
+                                <ion-icon name="logo-discord"></ion-icon>
+                            </span>
+                        </div>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="./js/anim.js"></script>
+
+</html>
