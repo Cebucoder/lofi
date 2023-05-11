@@ -1,0 +1,126 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: #495250;
+    
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 6px;
+    position: relative;
+}
+
+.main input[type='text'] {
+    width: 88%;
+    position: relative;
+    height: 40px;
+    top: 5px;
+    padding: 3px 6px;
+    outline: none;
+    font-size: 40px;
+    border: 5px solid black;
+    display: flex;
+    margin: 5px;
+    border-radius: 6px;
+    color: black;
+}
+
+.btn{
+    width: 100%;
+    /*display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;*/
+}
+.sum{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*.btn input[type='button'] {
+    width: 70px;
+    padding: 2px;
+    margin: 2px 0px;
+    position: relative;
+    left: 13px;
+    top: 130px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+    background-color: #495250;
+    border-radius: 6px;
+    color: white;
+}
+
+.btn input[type='button']:hover {
+    background-color: black;
+    color: white;
+}*/
+.btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+}
+.btn input{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+    background-color: #495250;
+    border-radius: 6px;
+    color: white;
+    margin: 3px 0;
+}
+.btn input:hover{
+    background-color: black;
+    color: white;
+}
+
+
+#headingTitle{
+    text-align: center;
+    padding: 20px;
+}
+
+.form-label{
+    padding: 10px;
+    font-weight: bolder;
+}
+
+#btnClear{
+    width: 93.5%;
+}
+#calculator span{
+    display: flex;
+    align-items: center;
+}
+

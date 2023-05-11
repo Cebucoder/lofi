@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equip="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/calculator-styles.css">
+        <title>My Simple Calculator</title>
+    </head>
+
+    <body>
+        
+        <div class="main-container">
+            <div class="main">
+            <h2 id="headingTitle">My Simple Calculator</h2>
+
+            <div id="calculator">
+               
+                <span>
+                    <label class="form-label" for="firstnumber">NUM1:</label>
+                    <input type="text" id="txtNum1" placeholder=". . . . ." required>
+                </span>
+
+                <span>
+                        <label class="form-label" for="secondnumber">NUM2:</label>
+                    <input type="text" id="txtNum2" placeholder=". . . . ." required>
+                </span>
+            </div>
+
+
+        <div class="btn">
+            <div class="sum">
+                <input type="button" class="btns" onclick="sum()" value="+">
+                <input type="button" class="btns" onclick="difference()" value="-"/>
+                <input type="button" class="btns" onclick="product()" value="*"/>
+                <input type="button" class="btns" onclick="quotient()" value="/"/>
+            </div>
+            <input type="button" id="btnClear" onclick="clear()" value="CLEAR"/>
+        </div>
+        </div>
+        </div>  
+
+    </body>
+     <script src="js/calculator-script.js"></script>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equip="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> My Bootstrap Calculator </title>
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+        
+    </head>
+    <body>
+        <div class ="container">
+            <div class ="row">
+                <!-- FIRST COL -->
+                <div class="col"> </div>
+                <!-- SECOND COL / CARD -->
+                <div class="col">
+                    <div class="card">
+                        <!-- CARD HEADER -->
+                        <div class="card-header"> My Bootstrap Calculator </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body">
+                        <!-- TEXT BOXES -->
+                        <div class="mb-3">
+                            <label class="cardnum1" for="firstnumber"> Number 1 :</label>
+                            <br>
+                            <input type="text" class="form-control" id="txtNum1" placeholder="Please Enter Number 1 . . . ">
+                        </div>
+                        <div class="mb-3">
+                            <label class="cardnum2" for="secondnumber"> Number 2 :</label>
+                            <br>
+                            <input type="text" class="form-control" id="txtNum2" placeholder="Please Enter Number 2 . . . ">
+                        </div>
+                        <br>
+                <!-- 1ST ROW / BUTTONS -->
+                <div class="row"> 
+                    <!-- ADD -->
+                    <div class="col">
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-primary" onclick="sum()" id="addBtn"> + </button>
+                        </div> 
+                    </div>
+                    <!-- SUBTRACT -->
+                    <div class="col">
+                        <div class="d-grid"> 
+                            <button type="button" class="btn btn-warning" onclick="minus()" id="minusBtn"> - </button>
+                        </div> 
+                    </div>
+                    <!-- MULTIPLY -->
+                    <div class="col">
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-success" onclick="multiply()" id="multiplyBtn"> * </button>
+                        </div>
+                    </div>
+                    <!-- DIVIDE -->
+                    <div class="col">
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-danger" onclick="divide()" id="divideBtn"> / </button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                    <!-- 2ND ROW / CLEAR -->
+                    <div class ="row">
+                        <div class="col">
+                            <div class="d-grid">
+                                <button type="button" class="btn btn-secondary" onclick="clear()"  id="btnClear"> CLEAR </button>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+
+                    </div>
+                    </div>
+                </div>
+            <!-- THIRD COL -->
+            <div class="col"> </div>
+        </div>
+    </div>
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

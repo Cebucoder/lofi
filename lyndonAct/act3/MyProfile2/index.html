@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<title>My profile</title>
+</head>
+<body>
+
+
+
+  <div class="maincontainer">
+
+    <!-- Image section -->
+    <div class="img">
+      <img src="../img/Me.jpg">
+    </div>
+
+
+    <!-- details section -->
+    <div class="details">
+      <h1>Hi I'm Lyndon</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+
+      <div class="btn">
+        <a href="#myinfo"><button>About Me</button></a>
+        <a href="#myhobby"><button class="active">Hobbies and More</button></a>
+        <a href="#myform"><button>Form</button></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- next container -->
+
+  <div class="myinfo" id="myinfo">
+    <label>About Me</label>
+
+    <div class="info">
+      <div class="lydon">
+        <img src="./img/Me2.jpg">
+      </div>
+      <table>
+
+        <tr>
+          <td>Name:</td>
+          <td class="active2">Lyndon Erl Ramirez</td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td class="active2">21</td>
+        </tr>
+        <tr>
+          <td>Status:</td>
+          <td class="active2">Single</td>
+        </tr>
+        <tr>
+          <td>Birthdate:</td>
+          <td class="active2">September 26 2001</td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td class="active2">Bulacao Cabancaln 2 Cebu Ciy</td>
+        </tr>
+        <tr>
+          <td>Number:</td>
+          <td class="active2">+639666152461</td>
+        </tr>
+        <tr>
+          <td>Email Address:</td>
+          <td class="active2">Lyndonerlramirez@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Secondary Education:</td>
+          <td class="active2">Bulacao Community High School</td>
+        </tr>
+        <tr>
+          <td>Tertiary:</td>
+          <td class="active2">Asian College Of Technology</td>
+        </tr>
+         <tr>
+          <td>Program:</td>
+          <td class="active2">Bachelor Of Science in Information Technology</td>
+        </tr>
+        
+      </table>
+    </div>
+
+  </div>
+
+  <!-- next container -->
+</center>
+</div>      
+
+<div class="myform" id="myform">
+    <center>
+        
+
+        <div class="form-container">
+            <h4 class="denotes">*denotes mandatory</h4>
+        <form class="reserve-form">
+            <label class="form-label" for="fullname">Full Name*:</label><br>
+                <input type="text" id="flname" name="flname" placeholder="FirstName LastName" required><br><br>
+
+            <label class="form-label" for="email">Email address*:</label><br>
+                <input type="email" id="email" name="email" placeholder="EMAIL_ADDRESS" required><br><br>
+
+            <label class="form-label" for="package">Select Tour Package*:</label><br>
+                <select name="package" id="package" required>
+                  <option value="luzon">Luzon Tour</option>
+                  <option value="visayas">Visayas Tour</option>
+                  <option value="mindanao">Mindanao Tour</option>
+                </select><br><br>
+
+            <label class="form-label" for="arrival">Arrival date*:</label><br>
+                <input type="date" id="arrival" name="arrival" required><br><br>
+
+            <label class="form-label" for="persons">Number of persons*:</label><br>
+                <input type="number" id="persons" name="persons" placeholder="UNKNOWN_TYPE" required><br><br>
+
+            <label class="form-label" for="avail1">What would you want to avail?*:</label><br>
+                <input type="checkbox" id="avail1" name="avail1" value="Boarding" required>
+                    <label for="avail1"> Boarding</label><br>
+                <input type="checkbox" id="avail2" name="avail2" value="Fooding" required>
+                    <label for="avail2"> Fooding</label><br>
+                <input type="checkbox" id="avail3" name="avail3" value="SightSeeing" required>
+                    <label for="avail3"> Sight seeing</label><br><br>
+
+            <label class="form-label" for="coupon">Discount Coupon code*:</label><br>
+                <input type="number" id="coupon" name="coupon" placeholder="UNKNOWN_TYPE" required><br><br>
+            
+            <label class="form-label" for="terms">Terms and conditions*</label><br>
+                <input type="radio" id="agree" name="condition" value="Agree" required>
+                <label for="agree">I agree</label><br>
+                <input type="radio" id="disagree" name="condition" value="Disagree" required>
+                <label for="disagree">I disagree</label><br><br><br>
+
+            <input class="reserve-button" type="button" onclick="alert('RESERVATION COMPLETE! THANK YOU!')" value="Complete reservation">
+        </form>
+        </div>
+    </center>
+
+    <!-- next container -->
+  <div class="myhobby" id="myhobby">
+    <div class="hub">
+      <label>Hobbies</label>
+      <p>"I read a lot of Webnovels, Webcomics, Light Novels. I also watch Anime and Play Online Multiplayer Games"</p>
+    </div>
+    <div class="hub">
+      <label>Likes</label>
+      <p>"Memes, Anime, Chocolates, Books, Music, Cold places"</p>
+    </div>
+    <div class="hub">
+      <label>Dislike</label>
+      <p>"Crowded places and Degenerates"</p>
+    </div>
+    <div class="hub">
+      <label>Favorites</label>
+      <p>Favorite Anime: Debatable <br>
+      Favorite Band: Pan!c at the Disco<br>
+      Favorite Song: This is Gospel<br>
+      Fvorite Color: Black & Blue</p>
+    </div>
+  </div>
+
+	
+</body>
+</html>
